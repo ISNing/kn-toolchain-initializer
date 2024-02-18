@@ -1,6 +1,5 @@
 plugins {
     System.getProperty("kotlinVersion")?.let {
-        id("org.jetbrains.kotlin.multiplatform")
         kotlin("multiplatform") version it
     } ?: (kotlin("multiplatform") version "1.9.22")
 }
